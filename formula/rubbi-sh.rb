@@ -2,14 +2,14 @@
 class RubbiSh < Formula
   desc "Go and Shell helpers to provide a sandbox directory for rubbish."
   homepage "https://github.com/jotadrilo/rubbi-sh"
-  version "0.0.8"
+  version "0.0.9"
 
   if OS.mac?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.8/rubbi-sh_0.0.8_darwin_x86_64.tar.gz"
-    sha256 "0867f2a955a84eb7550296d5262aa8ff01ddfc041c0f8cf96748c194d4c4792a"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.9/rubbi-sh_0.0.9_darwin_x86_64.tar.gz"
+    sha256 "42c8b677ed713d2bf043af5de39f1750b2b0866edf8e9047cc585b47f04c58df"
   elsif OS.linux?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.8/rubbi-sh_0.0.8_linux_x86_64.tar.gz"
-    sha256 "411290aed0e2ac245b0ba4f343b38282e069d14cbc43470c5b9a5fb09ebdb362"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.9/rubbi-sh_0.0.9_linux_x86_64.tar.gz"
+    sha256 "3e8ca239ffbad6db5599709f65eef36d252edaf7e118e233eb06d5ff11bcc62e"
   end
 
   def install
@@ -20,7 +20,7 @@ class RubbiSh < Formula
   def caveats; <<~EOS
     Please import the .rubbi.sh file in your profile configuration or add its content directly
     
-     . \#{(share/"alias")}/.rubbi.sh
+     . #{(share/"alias")}/.rubbi.sh
     
     This tool is based on some alias and shell functions and they are core to work.
   EOS
