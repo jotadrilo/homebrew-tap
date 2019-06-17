@@ -2,14 +2,14 @@
 class RubbiSh < Formula
   desc "Go and Shell helpers to provide a sandbox directory for rubbish."
   homepage "https://github.com/jotadrilo/rubbi-sh"
-  version "0.0.10"
+  version "0.0.11"
 
   if OS.mac?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.10/rubbi-sh_0.0.10_darwin_x86_64.tar.gz"
-    sha256 "686a6aec2f56c19367cf20d3c52f504780279f464928e20377465f9b40cb06f2"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.11/rubbi-sh_0.0.11_darwin_x86_64.tar.gz"
+    sha256 "441169074fa76e3371c849cd40b9640d9d0807b1043994e5202162773e43c34b"
   elsif OS.linux?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.10/rubbi-sh_0.0.10_linux_x86_64.tar.gz"
-    sha256 "6c33812a28b6f4473eb44d841dabfd3992bf729d23d2bd5940ee990b4261b87f"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.11/rubbi-sh_0.0.11_linux_x86_64.tar.gz"
+    sha256 "fa398c2b3adc5b79d515933bf97249533ab4794af6664566daeff1e488828aab"
   end
 
   def install
@@ -22,7 +22,11 @@ class RubbiSh < Formula
     
      . #{(share/"alias")}/.rubbi.sh
     
-    This tool is based on some alias and shell functions and they are core to work.
+    or the .rubbi.minimal.sh for a minimal setup (rbsh shell function only)
+    
+     . #{(share/"alias")}/.rubbi.minimal.sh
+    
+    This tool is based on some alias and shell functions that are core to work.
   EOS
   end
 
