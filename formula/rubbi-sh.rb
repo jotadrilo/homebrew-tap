@@ -2,19 +2,20 @@
 class RubbiSh < Formula
   desc "Go and Shell helpers to provide a sandbox directory for rubbish."
   homepage "https://github.com/jotadrilo/rubbi-sh"
-  version "0.0.11"
+  version "0.0.12"
 
   if OS.mac?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.11/rubbi-sh_0.0.11_darwin_x86_64.tar.gz"
-    sha256 "441169074fa76e3371c849cd40b9640d9d0807b1043994e5202162773e43c34b"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.12/rubbi-sh_0.0.12_darwin_x86_64.tar.gz"
+    sha256 "74c8ec3245106f7b4d63fb3c6400107ed0c7787a35b24f2638392b8c9a4e5190"
   elsif OS.linux?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.11/rubbi-sh_0.0.11_linux_x86_64.tar.gz"
-    sha256 "fa398c2b3adc5b79d515933bf97249533ab4794af6664566daeff1e488828aab"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.12/rubbi-sh_0.0.12_linux_x86_64.tar.gz"
+    sha256 "e59697498323291e862f30632f3dc7f1d6ed6201ff097302ee6e06c429986df8"
   end
 
   def install
     bin.install "rubbi-sh"
     (share/"alias").install "dotfiles/.rubbi.sh"
+    (share/"alias").install "dotfiles/.rubbi.minimal.sh"
   end
 
   def caveats; <<~EOS
