@@ -2,14 +2,14 @@
 class RubbiSh < Formula
   desc "Go and Shell helpers to provide a sandbox directory for rubbish."
   homepage "https://github.com/jotadrilo/rubbi-sh"
-  version "0.0.13"
+  version "0.0.14"
 
   if OS.mac?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.13/rubbi-sh_0.0.13_darwin_x86_64.tar.gz"
-    sha256 "5ec3f5ef4ac589b4579c597d6f501ee1404c03d69a4b7cf8c4fe764aef539ce4"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.14/rubbi-sh_0.0.14_darwin_x86_64.tar.gz"
+    sha256 "58ea4a09b9aae3eec5bfb896f39699222acc00ac4e9db6b6c286d8a9e8a35e34"
   elsif OS.linux?
-    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.13/rubbi-sh_0.0.13_linux_x86_64.tar.gz"
-    sha256 "123bca564cdbcfcc1cba7f05ac7bc57bc790f050590683278e559089e1d112a5"
+    url "https://github.com/jotadrilo/rubbi-sh/releases/download/0.0.14/rubbi-sh_0.0.14_linux_x86_64.tar.gz"
+    sha256 "9fe1835c239dcb789c6150acd9dd63b3f3790debca971152e58978cae5745344"
   end
 
   def install
