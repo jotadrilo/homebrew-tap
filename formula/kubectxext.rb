@@ -2,14 +2,14 @@
 class Kubectxext < Formula
   desc "CLI to extract a context from an existing kubernetes configuration file"
   homepage "https://github.com/jotadrilo/kubectxext"
-  version "1.0.2"
+  version "1.0.3"
 
   if OS.mac?
-    url "https://github.com/jotadrilo/kubectxext/releases/download/1.0.2/kubectxext_1.0.2_darwin_x86_64.tar.gz"
-    sha256 "7dcb953eba183514ba9dc4c3739b54a67b7a276d4958e94e7f14d05b649761a7"
+    url "https://github.com/jotadrilo/kubectxext/releases/download/1.0.3/kubectxext_1.0.3_darwin_x86_64.tar.gz"
+    sha256 "d774ad8444b6c6497e2aff12f6472922cb1af62861d3d06c80321cf55cf52600"
   elsif OS.linux?
-    url "https://github.com/jotadrilo/kubectxext/releases/download/1.0.2/kubectxext_1.0.2_linux_x86_64.tar.gz"
-    sha256 "b15d7f1538364a9342b6cb498e6a4d03fb07555f88033a3bbb3c52a8ff98e6ae"
+    url "https://github.com/jotadrilo/kubectxext/releases/download/1.0.3/kubectxext_1.0.3_linux_x86_64.tar.gz"
+    sha256 "b1fcbf40620f811a4f3f5b30e3a2acb1635362741850307b80051c28387cf746"
   end
 
   def install
