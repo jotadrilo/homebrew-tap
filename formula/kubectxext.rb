@@ -5,11 +5,11 @@
 class Kubectxext < Formula
   desc "CLI to extract a context from an existing kubernetes configuration file"
   homepage "https://github.com/jotadrilo/kubectxext"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
-    url "https://github.com/jotadrilo/kubectxext/releases/download/v1.0.2/kubectxext_1.0.2_darwin_x86_64.tar.gz"
-    sha256 "1844530952afaf1ac26ff6cb776dfa236e1e714e71a8c50f91746a22a61f9379"
+    url "https://github.com/jotadrilo/kubectxext/releases/download/v1.0.3/kubectxext_1.0.3_darwin_x86_64.tar.gz"
+    sha256 "561084d9e6d233cb59b94a32d644ebcd628a7ef7d985c2b039973dff8cd5eba3"
 
     def install
       bin.install "kubectxext"
@@ -28,8 +28,8 @@ class Kubectxext < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/jotadrilo/kubectxext/releases/download/v1.0.2/kubectxext_1.0.2_linux_x86_64.tar.gz"
-      sha256 "b2e9ebb8315505498ede8e5c5ba127f56262ee20359d739d0c299cd1b2c13075"
+      url "https://github.com/jotadrilo/kubectxext/releases/download/v1.0.3/kubectxext_1.0.3_linux_x86_64.tar.gz"
+      sha256 "2f9768c1abcc6aa1359fe0a3d96e8a55a7d28332e03ec17e1793cfad0f3b2416"
 
       def install
         bin.install "kubectxext"
