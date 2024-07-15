@@ -5,20 +5,20 @@
 class GoFactory < Formula
   desc "A factory code autogenator for Go."
   homepage "https://github.com/jotadrilo/go-factory"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/jotadrilo/go-factory/releases/download/1.0.2/go-factory_1.0.2_darwin_x86_64.tar.gz"
-      sha256 "7109e9ea1632b7b22c1d2f082a8a361009bd9bad3e7878a598487bd6da619e2e"
+      url "https://github.com/jotadrilo/go-factory/releases/download/1.0.3/go-factory_1.0.3_darwin_x86_64.tar.gz"
+      sha256 "882b9faba49516124b14871981f336f6b2c8558bff1dc9417c90de89d8c1d47a"
 
       def install
         bin.install "go-factory"
       end
     end
     on_arm do
-      url "https://github.com/jotadrilo/go-factory/releases/download/1.0.2/go-factory_1.0.2_darwin_arm64.tar.gz"
-      sha256 "cafa17ad4b0caa52e924478b7a45b13ccb042df1376bc5bbe775a9dc1b276662"
+      url "https://github.com/jotadrilo/go-factory/releases/download/1.0.3/go-factory_1.0.3_darwin_arm64.tar.gz"
+      sha256 "9c25a28fc74af51025021823d0bbc61059a7fe7e41a040ffd0f4d221736e087e"
 
       def install
         bin.install "go-factory"
@@ -29,8 +29,8 @@ class GoFactory < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jotadrilo/go-factory/releases/download/1.0.2/go-factory_1.0.2_linux_x86_64.tar.gz"
-        sha256 "6f4b367631e0330e34443185223627f2b01b59c02b41c9c3344d3f6375fcc4c4"
+        url "https://github.com/jotadrilo/go-factory/releases/download/1.0.3/go-factory_1.0.3_linux_x86_64.tar.gz"
+        sha256 "2fef0f9e3dafa069cfc82351f7ff20b337c2ad4ce60877e92e0a46f19170e28f"
 
         def install
           bin.install "go-factory"
@@ -39,8 +39,8 @@ class GoFactory < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jotadrilo/go-factory/releases/download/1.0.2/go-factory_1.0.2_linux_arm64.tar.gz"
-        sha256 "000fb811776eef4032ba78c0819ad8898a0e5b1df1eff9124866151e3e559ed5"
+        url "https://github.com/jotadrilo/go-factory/releases/download/1.0.3/go-factory_1.0.3_linux_arm64.tar.gz"
+        sha256 "a4440f0b733aa3e331a7fdf6610dc1e8f379551c5a709b4ab6fa48fb5e381503"
 
         def install
           bin.install "go-factory"
